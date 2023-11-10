@@ -32,7 +32,7 @@ public class AddProf2 {
             Class.forName("com.mysql.cj.jdbc.Driver");
             String url = "jdbc:mysql://localhost:3306/EmploiTemps1";
         String user = "root";
-        String password1 = "zxcvbnm1234";
+        String password1 = "passwd";
            Connection conn = DriverManager.getConnection(url, user, password1); 
         } catch (ClassNotFoundException | SQLException e) {
                     }
@@ -90,7 +90,7 @@ public class AddProf2 {
     Class.forName("com.mysql.cj.jdbc.Driver");
     String url = "jdbc:mysql://localhost:3306/EmploiTemps1";
     String user = "root";
-    String password1 = "zxcvbnm1234";
+    String password1 = "passwd";
     Connection conn = DriverManager.getConnection(url, user, password1);
 
     PreparedStatement statement = conn.prepareStatement("INSERT INTO prof (userName, idDep, email, password) VALUES (?, ?, ?, ?);");
